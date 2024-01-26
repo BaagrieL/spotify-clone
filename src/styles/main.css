@@ -2,6 +2,10 @@ body {
     background-color: #000;
 }
 
+/*==========
+Menu lateral
+============ */
+
 .sidebar__container {
     position: fixed;
     top: 0;
@@ -51,4 +55,147 @@ body {
     font-weight: 600;
     font-size: 1.4rem;
     font-family: "DM Sans", sans-serif;
+}
+
+.library {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: .4rem .8rem;
+
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+
+    background-color: #121212;
+    border-radius: .8rem;
+}
+
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library .library__button {
+    display: flex;
+
+    margin-right: 1rem;
+    
+    background-color: transparent;
+    border: 0;
+
+    color: #b3b3b3;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "DM Sans", Sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    padding: 2rem 1rem;
+
+    cursor: pointer;
+}
+
+.library .library__content .fa {
+    margin-right: 1rem;
+    padding-right: .8rem;
+    
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.library .library__content .fa-plus {
+    font-size: 1.7rem;
+}
+
+.section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    
+    background-color: #242424;
+    border-radius: 1rem;
+
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: .8rem 0;
+    padding: 1.6rem 2rem;
+}
+
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text {
+    font-family: "DM Sans", Sans-serif;
+    padding-bottom: 1.4rem;
+    color: #fff;
+}
+
+.section-playlist__content .title {
+    font-weight: 700;
+}
+
+.section-playlist__content .subtitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.section-playlist__content .section-playlist_button {
+    display: flex;
+    justify-content: center;
+
+    width: 11.3rem;
+
+    background-color: #fff;
+    color: #000;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "DM Sans", Sans-serif;
+    text-transform: none;
+
+    padding: 1rem;
+    margin-top: 1.2rem;
+
+    cursor: pointer;
+}
+
+.cookies {
+    margin: 2.5rem 2rem;
+}
+
+.cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all .3s ease-in;
+}
+
+.cookies a:hover {
+    text-decoration: underline;
+}
+
+.languages .languages__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 17rem;
+    margin: .8rem;
+    padding: .8rem;
+
+    background-color: transparent;
+    border: 1px solid #878787;
+    border-radius: 2rem;
+
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
 }
