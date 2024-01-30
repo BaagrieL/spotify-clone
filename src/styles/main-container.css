@@ -1,0 +1,355 @@
+/*==========
+   HEADER 
+ ===========*/
+
+main {
+    padding: 1rem 2rem 0;
+}
+
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 29rem;
+    margin-right: 1rem;
+    padding-top: 0.3rem;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+
+    border-radius: 0.8rem;
+    background-color: var(--bg-containers);
+}
+
+.header__navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__navigation .navigation .arrow-left {
+    margin-right: 2rem;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+
+    width: 36.4rem;
+    max-width: 100%;
+    height: 4.8rem;
+
+    margin-left: 0.8rem;
+    background-color: #242424;
+
+    border: 1px solid transparent;
+    border-radius: 50rem;
+}
+
+.header__search > img {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    margin-left: 1rem;
+}
+
+.header__search > input {
+    background: transparent;
+    border: none;
+    padding: 0 10rem 0 1.2rem;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    user-select: none;
+}
+
+.header-login .subscribe {
+    color: #a7a7a7;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: transparent;
+    margin-right: 3.2rem;
+    cursor: pointer;
+}
+
+.header-login .login {
+    width: 10rem;
+    height: 4.8rem;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+/* =========
+    HERO
+  ========= */
+
+.hero__container {
+    border-radius: 0.8rem;
+    margin-top: 1.6rem;
+    padding: 1rem;
+    background: var(--bg-containers);
+    display: flex;
+    flex-direction: column;
+    height: 50.6rem;
+    color: #fff;
+}
+
+.hero__container .text #title {
+    color: var(--text-base-light);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.hero__container .text > p {
+    color: var(--text-base-light);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hero__container .cards__container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+    height: 100%;
+}
+
+.offer__scroll-container {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.cards__container .card {
+    padding: 1.6rem;
+    font-size: 1.8rem;
+    font-family: var(--main-font);
+}
+
+.offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.cards {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cards span {
+    padding: 16px;
+    position: absolute;
+    color: var(--text-base-light);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* COLOR CARDS */
+.card1 {
+    background-color: rgb(0, 100, 80);
+}
+.card2 {
+    background-color: rgb(132, 0, 231);
+}
+.card3 {
+    background: rgb(30, 50, 100);
+}
+.card4 {
+    background: rgb(140, 25, 50);
+}
+.card5 {
+    background: rgb(232, 17, 91);
+}
+.card6 {
+    background: rgb(83, 122, 161);
+}
+.card7 {
+    background: rgb(142, 102, 172);
+}
+.card8 {
+    background: rgb(20, 138, 8);
+}
+.card9 {
+    background: rgb(30, 50, 100);
+}
+.card10 {
+    background: rgb(233, 20, 41);
+}
+.card11 {
+    background: rgb(80, 55, 80);
+}
+.card12 {
+    background: rgb(216, 64, 0);
+}
+.card13 {
+    background: rgb(186, 93, 7);
+}
+.card14 {
+    background: rgb(0, 30, 80);
+}
+.card15 {
+    background: rgb(60, 30, 80);
+}
+/* FIM COLOR CARDS */
+
+.offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+.artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 23%;
+}
+
+.artist-card:hover {
+    background-color: #252525;
+}
+
+.card-img {
+    padding-bottom: 97%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: -4px;
+    top: 180px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px;
+}

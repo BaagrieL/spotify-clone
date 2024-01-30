@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    overflow: hidden;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,4 +13,8 @@ html {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+
+img {
+    user-select: none;
 }
